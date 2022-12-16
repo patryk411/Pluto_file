@@ -1,0 +1,566 @@
+@use './colors' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+  position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+
+.orange-color {
+    color: $orange;
+    font-size: 1.6rem;
+}
+
+.grey-color {
+  color: $grey;
+}
+
+.navbar-class {
+    text-transform: uppercase;
+}
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+}
+
+.content {
+  background-color: #f5f5f5;
+  width: 10vw;
+  height: 10px;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.search {
+  --size: 60px;
+  display: flex;
+  border-radius: 100px;
+  overflow: hidden;
+  font-size: 1.25em;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  // margin-left: auto;
+  transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  padding: 3px;
+}
+
+.search__input {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+  border: 0;
+  padding: .25em 1em;
+  flex-grow: 1;
+  outline: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.search__submit {
+  font-size: 1.5rem;
+  margin-left: auto;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 200ms ease-out;
+  width: calc(var(--size) - 10px);
+  height: calc(var(--size) - 10px);
+  color: var(--clr-body);
+}
+
+.search:focus-within {
+  // box-shadow: 0 0 5px var(--clr-primary);
+  width: 100%;
+  
+  .search__input {
+    opacity: 1;
+    z-index: initial;
+    cursor: initial;
+    width: calc(100% - var(--size));
+  }
+  
+  .search__submit {
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    // transition: transform 500ms ease-out;
+    
+    &:hover,
+    &:focus {
+      outline: 0;
+      // transform: rotate(1turn);
+      box-shadow: 0 0 10px rgba(0,0,0,.65);
+    }
+  }
+}
+
+
+
+
+
+.navbar-light .navbar-brand{
+    color: $grey;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+}
+
+.border-bottom-about {
+    text-decoration: 3px underline $orange;
+}
+
+.header-bg {
+    background-color: $purple;
+}
+
+.breadcrumb-item {
+    color: #fff;
+    transition: .5s;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: .5s;
+  color: #fff;
+}
+
+.breadcrumb-item a:hover {
+  color: #fff;
+}
+
+.breadcrumb-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .grey-color {
+    color: $grey;
+}
+
+.introduction-left {
+    width: 100%;
+    height: 325px;
+    background-color: #b1abb6;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    color: $grey;
+}
+
+.our-services-text {
+    font-size: .8rem;
+}
+
+.services-question {
+    font-size: 2.2rem;
+}
+
+.container .service-h3 {
+    font-size: 1.4rem;
+}
+
+.aboutus-main {
+    font-size: .8rem;
+    color: $grey;
+}
+
+.aboutus-bgcolor {
+    background-color: #f5f5f5;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: black;
+    padding: 45px 45px;
+  }
+
+ 
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #212529;
+    cursor: pointer;
+  }
+
+  .accordion .label::before {
+    content: '+';
+    color: $orange;
+    margin: 10px;
+  }
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+    
+  .accordion hr {
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+  .progress-bar {
+    background-color: $purple;
+  }
+
+  .progress {
+    height: .4rem;
+  }
+
+  .striped {
+    font-size: 1rem;
+  }
+
+.photoshop-box{
+    display: flex;
+}
+
+  .striped-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .typography {
+    height: 400px;
+    background-color: $purple;
+  }
+
+  .typography-text {
+    font-size: 2rem;
+  }
+
+  .carousel-title {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: .8rem;
+  }
+
+  .carousel-indicators {
+    border-radius: 50%;
+  }
+
+  .team-top {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+  }
+  
+  .team-img {
+    width: 275px;
+    height: 270px;
+    background-color: $grey;
+
+  }
+
+  .team-positions {
+    color: $grey;
+    font-size: 1rem;
+  }
+
+  .our-team {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .team-line {
+    width: 65%;
+  }
+
+  .team-icons {
+    color: $grey;
+  }
+
+  .team-person-icons {
+    transition: .5s;
+  }
+
+  .team-person-icons:hover {
+    color: #212529;
+    cursor: pointer;
+  }
+
+  .clients {
+    background-color: $section-color;
+  }
+  
+  .clients-top {
+    text-transform: uppercase;
+    color: $grey;
+    font-size: 0.8rem;
+  }
+
+  .clients-top-paragraph {
+    color: $grey;
+    font-size: 1rem;
+  }
+
+  .clients-img {
+    background-color: $grey;
+    width: 185px;
+    height: 105px;
+  }
+
+  .container .text-bottom-template {
+    color: $grey;
+    font-size: 1rem;
+  }
+
+  .follow-us {
+    background-color: $purple;
+  }
+
+  .follow-us i {
+    transition: .5s;
+  }
+
+  .follow-us a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .follow-us i:hover {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .follow-paragraph {
+    display: flex;
+    flex-direction: row;   
+    justify-content: start;
+    align-items: start;
+    text-transform: uppercase;
+    color: $grey;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .followus-left {
+    display: flex;
+    flex-direction: row;
+  }
+
+.icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.followus-right {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: row;
+  background-color: #8f8897;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  background-color: $orange;
+  color: #fff;
+}
+
+.end {
+  background-color: #2a272e;
+}
+
+.first-row {
+  color: #4c4a4f;
+  font-size: 1rem;
+}
+
+.navbar-brand-top {
+  color: #4c4a4f;
+}
+
+.second-row {
+  font-size: 1rem;
+  color: $section-color;
+}
+
+.contact-footer {
+  color: $grey;
+  font-size: 1rem;
+}
+
+.contact-footer a {
+  color: $grey;
+  transition: .5s;
+}
+
+.contact-footer a:hover {
+  font-size: 1.2rem;
+}
+
+.orange-color-footer {
+  color: $orange;
+}
+
+.paragraph-third-footer {
+  color: #4c4a4f;
+  font-size: .8rem;
+}
+
+.text-third-footer {
+  font-size: 1rem;
+  color: $section-color;
+}
+
+.link-footer {
+  color: $orange;
+}
+
+.four-paragraph {
+  color: $grey;
+  font-size: 1rem;
+}
+
+.box-footer {
+  width: 80px;
+  height: 80px;
+  background-color: $grey;
+}
+
+.footer-boxs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  border: none;
+}
+
+.card {
+  background-color: $grey;
+}
+
+
+@media (max-width:576px ) {
+  .introduction .container .welcome-company {
+    font-size: 2rem;
+  }
+  .introduction .container{
+    margin: 10px 20px;
+  }
+  .aboutus-bottom .container{
+    margin: 10px 20px;
+  }
+  .capabilities .container {
+    margin: 10px 20px;
+  }
+  .typography-text {
+    font-size: 1.5rem;
+  }
+  .team-icons {
+    margin-bottom: 10px;
+  }
+  .meet-text {
+    font-size: 1.5rem;
+  }
+  .clients .container {
+    margin: 10px 20px;
+  }
+  .like-text {
+    margin: 50px 0;
+  }
+  .text-bottom-template {
+    margin: 10px 20px;
+  }
+  
+  .followus-left {
+    font-size: 2rem;
+    margin: 20px 0;
+    margin-left: 10px;
+  }
+
+  .followus-right {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  .follow-us .container {
+    margin-top: -40px;
+  }
+
+  .btn-follow {
+    margin-right: 20px;
+  }
+
+  .end .container {
+    margin: 0 10px;
+  }
+
+}
+
+@media (min-width:576px) {
+  
+}
+
+@media (max-width:992px) {
+  .content {
+    margin-bottom: 30px;
+  }
+
+}
