@@ -192,29 +192,38 @@
 
     <p class="text-center text-uppercase aboutus-main">our capabilities</p>
     <p class="display-4 text-center">Things we are good at</p>
-    <div class="container">
-      <div class="row">
+    <div class="container d-flex flex-row align-items-start justify-content-end">
     
         <div class="col-md-12 col-lg-6 py-5">
-        <div class="accordion-body">
-          <div class="accordion">
-            <div class="container accordion-inside">
-              <div class="label">Problems solving</div>
-              <div class="content">Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications. A hypertext is a text that is used to reference other pieces of text, while a markup language is a series of markings that tells web servers the style and structure of a document. HTML is very simple to learn and use.</div>
-            </div>
-            <div class="container accordion-inside">
-              <div class="label">System monitoring</div>
-              <div class="content">CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users. CSS is designed to make style sheets for the web. It is independent of HTML and can be used with any XML-based markup language. CSS is popularly called the design language of the web.
-        </div>
-            </div>
-            <div class="container accordion-inside">
-              <div class="label">Affect managment</div>
-              <div class="content">CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users. CSS is designed to make style sheets for the web. It is independent of HTML and can be used with any XML-based markup language. CSS is popularly called the design language of the web.
-        </div>
-            </div>
+          <div class="container accordion-cont">
+            <div class="accordion d-flex flex-column justify-content-start">
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item1">
+                    Problems solving
+                </a>
+                <div class="accordion__item__content" id="item1">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item2">
+                  System monitoring
+                </a>
+                <div class="accordion__item__content" id="item2">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item3">
+                  Affect management
+                </a>
+                <div class="accordion__item__content" id="item3">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
 
     <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-start py-5">
      
@@ -404,17 +413,17 @@
     <div class="container">
       <div class="row py-5 col-12">
         <div class="col-sm-10 col-lg-8 ms-auto grey-color">
-        <h3 class="text-center like-text">Like what you see? Buy this template</h3>
+        <h3 class="text-center like-text d-flex flex-column align-items-center justify-content-center">Like what you see? Buy this template</h3>
       </div>
       <div class="col-sm-2 col-lg-2 text-bottom-template">
-        <p>TAKE MY MONEY</p>
+        <p class="take-money">TAKE MY MONEY</p>
       </div>
       </div>
     </div>
 
   </section>
 
-  <section class="follow-us pt-5">
+  <section class="follow-us pt-4">
     <div class="container">
       <div class="row mt-4">
         <div class="col-sm-12 col-lg-6 followus-left">
@@ -464,7 +473,7 @@
 
         <div class="col-sm-12 col-md-3 second-row">
           <p class="text-uppercase contact-footer"><a href="">Contact us</a></p>
-          <p class="orange-color-footer">hello@example.com</p>
+          <a href="mailto: hello@example.com">hello@example.com</a>
           <p>121 King Street Melbourne
             <br>
             Victoria 3000 Australia

@@ -1,5 +1,15 @@
 @use './colors' as *;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,16 +41,6 @@ body {
 }
 
 
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --clr-primary: #ee6352;
-  --clr-body: #333;
-}
-
 .content {
   background-color: #f5f5f5;
   width: 10vw;
@@ -53,11 +53,10 @@ body {
   display: flex;
   border-radius: 100px;
   overflow: hidden;
-  font-size: 1.25em;
+  font-size: 1em;
   position: relative;
   width: var(--size);
   height: var(--size);
-  // margin-left: auto;
   transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   padding: 3px;
 }
@@ -94,7 +93,6 @@ body {
 }
 
 .search:focus-within {
-  // box-shadow: 0 0 5px var(--clr-primary);
   width: 100%;
   
   .search__input {
@@ -106,19 +104,14 @@ body {
   
   .search__submit {
     box-shadow: 0 0 10px rgba(0,0,0,.15);
-    // transition: transform 500ms ease-out;
     
     &:hover,
     &:focus {
       outline: 0;
-      // transform: rotate(1turn);
       box-shadow: 0 0 10px rgba(0,0,0,.65);
     }
   }
 }
-
-
-
 
 
 .navbar-light .navbar-brand{
@@ -130,7 +123,11 @@ body {
     letter-spacing: 4px;
 }
 
-.border-bottom-about {
+.navbar-collapse a {
+  transition: text-decoration .5s;
+}
+
+.navbar-collapse a:hover{
     text-decoration: 3px underline $orange;
 }
 
@@ -198,51 +195,52 @@ body {
     font-size: 1.2rem;
 }
 
-.accordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    color: black;
-    padding: 45px 45px;
-  }
-
- 
-  .accordion .container {
-    position: relative;
-    margin: 10px 10px;
-  }
-  
-  
-  .accordion .label {
-    position: relative;
-    padding: 10px 0;
-    font-size: 30px;
-    color: #212529;
+.accordion__item {
+  &__title {
+    display: block;
+    padding: 20px;
     cursor: pointer;
+    position: relative;
+    &:after {
+      content: '+';
+      color: $orange;
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      font-size: 2rem;
+      line-height: 2rem;
+      margin-top: -1rem;
+      font-weight: bold;
+    }
+    
   }
 
-  .accordion .label::before {
-    content: '+';
-    color: $orange;
-    margin: 10px;
-  }
   
-  .accordion .content {
-    position: relative;
-    background: white;
-    height: 0;
-    font-size: 20px;
-    text-align: justify;
-    width: 780px;
-    overflow: hidden;
-    transition: 0.5s;
+  &__content {
+    display: none;
+    padding: 20px;
+    &:target {
+      display: block;
+    }
   }
-    
-  .accordion hr {
-    margin-left: 0;
-    border: 1px solid grey;
-  }
+}
+
+.accordion a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.accordion p {
+  color: $grey;
+}
+.container .accordion-cont {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+[id] {
+  scroll-margin-top: 450px;
+}
 
   .progress-bar {
     background-color: $purple;
@@ -368,7 +366,6 @@ body {
   
   .follow-us i:hover {
     cursor: pointer;
-    font-size: 2rem;
   }
 
   .follow-paragraph {
@@ -380,6 +377,7 @@ body {
     color: $grey;
     font-size: 1rem;
     letter-spacing: 2px;
+    margin-top: 5px;
   }
 
   .followus-left {
@@ -412,6 +410,9 @@ body {
   background-color: #8f8897;
   border: none;
   border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
 }
 
 .btn-follow {
@@ -421,6 +422,7 @@ body {
   justify-content: end;
   background-color: $orange;
   color: #fff;
+  font-size: .8rem;
 }
 
 .end {
@@ -451,8 +453,13 @@ body {
   transition: .5s;
 }
 
-.contact-footer a:hover {
-  font-size: 1.2rem;
+
+.take-money {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .orange-color-footer {
