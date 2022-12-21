@@ -9,10 +9,7 @@
 - You can open the file also by clicking on it
 
 
-## Tech
+## How to run
 
-PLUTO uses designs likesource projects to work properly:
-
-- [Boostrap v.5.1.3 ]
-- [Sass]
-- [JavaScript]
+- First step you should download the repository
+- Then you run the index.html file in your favorite browser
