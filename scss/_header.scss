@@ -1,0 +1,27 @@
+.header-bg {
+    background-color: $purple;
+}
+
+.breadcrumb-item {
+    color: #fff;
+    transition: .5s;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: .5s;
+  color: #fff;
+}
+
+.breadcrumb-item a:hover {
+  color: #fff;
+}
+
+.breadcrumb-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .grey-color {
+    color: $grey;
+}

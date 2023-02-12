@@ -1,4 +1,5 @@
-@use './colors' as *;
+@import './colors';
+// @use './colors' as *;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -27,6 +28,10 @@ body {
     background-color: #fff;
 }
 
+h2 {
+  font: size 3rem;;
+}
+
 .orange-color {
     color: $orange;
     font-size: 1.6rem;
@@ -36,242 +41,21 @@ body {
   color: $grey;
 }
 
-.navbar-class {
-    text-transform: uppercase;
-}
+@import './nav';
 
-.content {
-  background-color: #f5f5f5;
-  width: 10vw;
-  height: 10px;
-  box-shadow: 0 0 3em rgba(0,0,0,.15);
-}
+@import './header';
 
-.search {
-  --size: 60px;
-  display: flex;
-  border-radius: 100px;
-  overflow: hidden;
-  font-size: 1em;
-  position: relative;
-  width: var(--size);
-  height: var(--size);
-  transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  padding: 3px;
-}
+@import './introduction';
 
-.search__input {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-items: start;
-  border: 0;
-  padding: .25em 1em;
-  flex-grow: 1;
-  outline: 0;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  opacity: 0;
-  cursor: pointer;
+@import './services';
 
-}
-
-.search__submit {
-  font-size: 1.5rem;
-  margin-left: auto;
-  background: 0;
-  border: 0;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background 200ms ease-out;
-  width: calc(var(--size) - 10px);
-  height: calc(var(--size) - 10px);
-  color: var(--clr-body);
-}
-
-.search:focus-within {
-  width: 100%;
-  
-  .search__input {
-    opacity: 1;
-    z-index: initial;
-    cursor: initial;
-    width: calc(100% - var(--size));
-  }
-  
-  .search__submit {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
-    
-    &:hover,
-    &:focus {
-      outline: 0;
-      box-shadow: 0 0 10px rgba(0,0,0,.65);
-    }
-  }
-}
-
-
-.navbar-light .navbar-brand{
-    color: $grey;
-}
-
-.navbar-brand {
-    font-size: 1.4rem;
-    letter-spacing: 4px;
-}
-
-.navbar-collapse a {
-  transition: text-decoration .5s;
-}
-
-.navbar-collapse a:hover{
-    text-decoration: 3px underline $orange;
-}
-
-.navbar-collapse .dropdown-menu a {
-    color: $grey;
-}
-
-.navbar-collapse .dropdown-menu a:hover {
-  color: black;
-}
-
-
-.header-bg {
-    background-color: $purple;
-}
-
-.breadcrumb-item {
-    color: #fff;
-    transition: .5s;
-}
-
-.breadcrumb-item a {
-  text-decoration: none;
-  transition: .5s;
-  color: #fff;
-}
-
-.breadcrumb-item a:hover {
-  color: #fff;
-}
-
-.breadcrumb-item:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-.container .grey-color {
-    color: $grey;
-}
-
-.introduction-left {
-    width: 100%;
-    height: 325px;
-    background-color: #b1abb6;
-}
-
-.intro-text {
-    font-size: 1.4rem;
-    color: $grey;
-}
-
-.our-services-text {
-    font-size: .8rem;
-}
-
-.services-question {
-    font-size: 2.2rem;
-}
-
-.container .service-h3 {
-    font-size: 1.4rem;
-}
+@import './capabilities';
 
 .aboutus-main {
-    font-size: .8rem;
-    color: $grey;
-}
-
-.aboutus-bgcolor {
-    background-color: #f5f5f5;
-}
-
-.card-text {
-    font-size: 1.2rem;
-}
-
-.accordion__item {
-  &__title {
-    display: block;
-    margin-bottom: 30px;
-    cursor: pointer;
-    position: relative;
-    &:after {
-      content: '+';
-      color: $orange;
-      position: absolute;
-      left: -25px;
-      top: 50%;
-      font-size: 2rem;
-      line-height: 2rem;
-      margin-top: -1rem;
-      font-weight: bold;
-    }
-    
-  }
-
-  
-  &__content {
-    display: none;
-    padding: 20px;
-    &:target {
-      display: block;
-    }
-  }
-}
-
-.accordion a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.accordion p {
+  font-size: .8rem;
   color: $grey;
 }
-.container .accordion-cont {
-  max-width: 600px;
-  margin: 20px auto;
-}
 
-[id] {
-  scroll-margin-top: 450px;
-}
-
-  .progress-bar {
-    background-color: $purple;
-  }
-
-  .progress {
-    height: .4rem;
-  }
-
-  .striped {
-    font-size: 1rem;
-  }
-
-.photoshop-box{
-    display: flex;
-}
-
-  .striped-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: end;
-  }
 
   .typography {
     height: 400px;
