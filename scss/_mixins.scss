@@ -1,0 +1,10 @@
+@mixin section-header {
+        font-size: 3rem;
+}
+
+@mixin section-top {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+.footer {
+    background-color: #2a272e;
+    
+    .card {
+      background-color: $grey;
+    }
+
+&__section {
+
+  &--logo {
+    color: #4c4a4f;
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    i {
+        font-size: 2.2rem;
+    }
+
+
+    &:hover {
+        color: #4c4a4f;
+    }
+  }
+        
+  &--first-row {
+    color: #4c4a4f;
+    font-size: 1rem;
+  }
+  
+  &--brand {
+    color: #4c4a4f;
+  }
+  
+  &--second-row {
+    font-size: 1rem;
+    color: $section-color;
+  }
+  
+  &--second-row a {
+    color: $orange;
+  }
+  
+  
+  &--contact {
+    color: $grey;
+    font-size: 1rem;
+
+    a {
+      color: $grey;
+      transition: .5s;
+    }
+  }
+  
+  &--orange-color-footer {
+    color: $orange;
+  }
+  
+  &--paragraph-third-footer {
+    color: #4c4a4f;
+    font-size: .8rem;
+  }
+  
+  &--text-third-footer {
+    font-size: 1rem;
+    color: $section-color;
+  }
+  
+  &--link-footer {
+    color: $orange;
+  }
+  
+  &--four-paragraph {
+    color: $grey;
+    font-size: 1rem;
+  }
+  
+  &--box-footer {
+    width: 80px;
+    height: 80px;
+    background-color: $grey;
+  }
+  
+  &--footer-boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border: none;
+  }
+ }
+}
+  
+
+  
+  

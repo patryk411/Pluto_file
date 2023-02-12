@@ -1,0 +1,78 @@
+.follow {
+
+    background-color: $purple;
+    
+    i {
+        transition: .5s;
+    }
+    
+    i:hover {
+        cursor: pointer;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+    }
+    
+    .form-control {
+      display: flex;
+      flex-direction: row;
+      background-color: #8f8897;
+      border: none;
+      border-radius: 5px;
+      margin: 0;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    
+    
+    &__section {
+        
+        &--paragraph {
+            display: flex;
+            flex-direction: row;   
+            justify-content: start;
+            align-items: start;
+            text-transform: uppercase;
+            color: $grey;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-top: 1px;
+          }
+        
+          &--left {
+            display: flex;
+            flex-direction: row;
+          }
+        
+          &--icon {
+              display: flex;
+          flex-direction: row;
+        }
+        
+        &--right {
+            display: flex;
+          flex-direction: row;
+          align-items: start;
+          justify-content: start;
+        }
+        
+        &--btn-follow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: end;
+          background-color: $orange;
+          color: #fff;
+          font-size: .6rem;
+        }
+    }
+}

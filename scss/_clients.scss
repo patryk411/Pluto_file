@@ -1,0 +1,24 @@
+.clients {
+
+    background-color: $section-color;
+
+    &__section {
+
+      &--top {
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 0.8rem;
+      }
+    
+      &--top-paragraph {
+        color: $grey;
+        font-size: 1rem;
+      }
+    
+      &--img {
+        background-color: $grey;
+        width: 100%;
+        height: 40%;
+    }
+  }
+}

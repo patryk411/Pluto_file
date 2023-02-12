@@ -1,0 +1,41 @@
+.team {
+
+    &__section {
+      
+    &--img {
+      width: 275px;
+      height: 270px;
+      background-color: $grey;
+    
+    }
+    
+    &--positions {
+      color: $grey;
+      font-size: 1rem;
+    }
+    
+    &--our-team {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    &--line {
+      width: 65%;
+    }
+    
+    &--icons {
+      color: $grey;
+    }
+    
+    &--person-icons {
+      transition: .5s;
+  
+  
+      &:hover {
+        color: #212529;
+        cursor: pointer;
+      }
+    }
+    }
+    
+  }

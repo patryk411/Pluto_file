@@ -1,8 +1,11 @@
 @import './colors';
+@import './mixins';
 // @use './colors' as *;
 
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -11,25 +14,19 @@
 }
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
-    font-size: 62,5%;
+  font-size: 62,5%;
 }
 
 body {
   position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  background-color: #fff;
 }
 
 h2 {
-  font: size 3rem;;
+  @include section-header;
 }
 
 .orange-color {
@@ -51,255 +48,41 @@ h2 {
 
 @import './capabilities';
 
-.aboutus-main {
-  font-size: .8rem;
-  color: $grey;
+@import './typography';
+
+@import './team';
+
+@import './clients';
+
+@import './follow-us';
+
+@import './footer';
+
+.section-top-text {
+  @include section-top;
 }
 
-
-  .typography {
-    height: 400px;
-    background-color: $purple;
-  }
-
-  .typography-text {
-    font-size: 2rem;
-  }
-
-  .carousel-title {
-    color: $grey;
-    text-transform: uppercase;
-    font-size: .8rem;
-  }
-
-  .carousel-indicators {
-    border-radius: 50%;
-  }
-
-  .team-top {
-    color: $grey;
-    text-transform: uppercase;
-    font-size: .8rem;
-    text-align: center;
-  }
-  
-  .team-img {
-    width: 275px;
-    height: 270px;
-    background-color: $grey;
-
-  }
-
-  .team-positions {
-    color: $grey;
-    font-size: 1rem;
-  }
-
-  .our-team {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .team-line {
-    width: 65%;
-  }
-
-  .team-icons {
-    color: $grey;
-  }
-
-  .team-person-icons {
-    transition: .5s;
-  }
-
-  .team-person-icons:hover {
-    color: #212529;
-    cursor: pointer;
-  }
-
-  .clients {
-    background-color: $section-color;
-  }
-  
-  .clients-top {
-    text-transform: uppercase;
-    color: $grey;
-    font-size: 0.8rem;
-  }
-
-  .clients-top-paragraph {
-    color: $grey;
-    font-size: 1rem;
-  }
-
-  .clients-img {
-    background-color: $grey;
-    width: 185px;
-    height: 105px;
-  }
-
-  .container .text-bottom-template {
-    color: $grey;
-    font-size: 1rem;
-  }
-
-  .follow-us {
-    background-color: $purple;
-  }
-
-  .follow-us i {
-    transition: .5s;
-  }
-
-  .follow-us a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .follow-us i:hover {
-    cursor: pointer;
-  }
-
-  .follow-paragraph {
-    display: flex;
-    flex-direction: row;   
-    justify-content: start;
-    align-items: start;
-    text-transform: uppercase;
-    color: $grey;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin-top: 1px;
-  }
-
-  .followus-left {
-    display: flex;
-    flex-direction: row;
-  }
-
-.icon {
-  display: flex;
-  flex-direction: row;
-}
-
-.followus-right {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: start;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-}
-
-.form-control {
-  display: flex;
-  flex-direction: row;
-  background-color: #8f8897;
-  border: none;
-  border-radius: 5px;
-  margin: 0;
-  padding: 0;
-  font-size: 1.1rem;
-}
-
-.btn-follow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  background-color: $orange;
-  color: #fff;
-  font-size: .6rem;
-}
-
-.end {
-  background-color: #2a272e;
-}
-
-.first-row {
-  color: #4c4a4f;
-  font-size: 1rem;
-}
-
-.navbar-brand-top {
-  color: #4c4a4f;
-}
-
-.second-row {
-  font-size: 1rem;
-  color: $section-color;
-}
-
-.second-row a {
-  color: $orange;
-}
-
-
-.contact-footer {
+.container .text-bottom-template {
   color: $grey;
   font-size: 1rem;
 }
-
-.contact-footer a {
-  color: $grey;
-  transition: .5s;
-}
-
 
 .take-money {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 5px;
   align-items: center;
   justify-content: center;
-}
-
-.orange-color-footer {
-  color: $orange;
-}
-
-.paragraph-third-footer {
   color: #4c4a4f;
-  font-size: .8rem;
+  font-size: 0.7em;
 }
 
-.text-third-footer {
-  font-size: 1rem;
-  color: $section-color;
-}
-
-.link-footer {
-  color: $orange;
-}
-
-.four-paragraph {
-  color: $grey;
-  font-size: 1rem;
-}
-
-.box-footer {
-  width: 80px;
-  height: 80px;
-  background-color: $grey;
-}
-
-.footer-boxs {
+.like-text {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-  border: none;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.1em;
 }
-
-.card {
-  background-color: $grey;
-}
-
 
 @media (max-width:576px ) {
   .introduction .container .welcome-company {
@@ -353,9 +136,6 @@ h2 {
   .end .container {
     margin: 0 10px;
   }
-
-
-
 }
 
 @media (min-width:576px) {
