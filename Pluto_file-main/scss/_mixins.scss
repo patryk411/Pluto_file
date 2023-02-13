@@ -1,0 +1,13 @@
+@mixin section-header {
+	font-size: 3rem;
+	font-family: $relway;
+	font-weight: 700;
+}
+
+@mixin section-top {
+	color: $grey;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	text-align: center;
+	font-family: $roboto;
+}

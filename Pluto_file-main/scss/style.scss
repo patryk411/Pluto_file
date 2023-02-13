@@ -1,0 +1,159 @@
+@import './colors';
+@import './mixins';
+@import './fonts';
+// @use './colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--clr-primary: #ee6352;
+	--clr-body: #333;
+}
+
+html {
+	font-size: 62, 5%;
+}
+
+body {
+	position: relative;
+	font-family: $roboto;
+	font-size: 1.4rem;
+	background-color: #fff;
+}
+
+h2 {
+	@include section-header;
+}
+
+.orange-color {
+	color: $orange;
+	font-size: 1.6rem;
+}
+
+.grey-color {
+	color: $grey;
+}
+
+@import './nav';
+
+@import './header';
+
+@import './introduction';
+
+@import './services';
+
+@import './capabilities';
+
+@import './typography';
+
+@import './team';
+
+@import './clients';
+
+@import './follow-us';
+
+@import './footer';
+
+.section-top-text {
+	@include section-top;
+}
+
+.buy-template {
+	font-family: $relway;
+}
+
+.container .text-bottom-template {
+	color: $grey;
+	font-size: 1rem;
+}
+
+.take-money {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+	align-items: center;
+	justify-content: center;
+	color: #4c4a4f;
+	font-size: 0.7em;
+}
+
+.like-text {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.1em;
+}
+
+@media (max-width: 576px) {
+	.introduction .container .welcome-company {
+		font-size: 2rem;
+	}
+
+	.aboutus-bottom .container {
+		margin: 10px 20px;
+	}
+	.capabilities .container {
+		margin: 10px 20px;
+	}
+	.typography-text {
+		font-size: 1.5rem;
+	}
+	.team-icons {
+		margin-bottom: 10px;
+	}
+	.meet-text {
+		font-size: 1.5rem;
+	}
+	.clients .container {
+		margin: 10px 20px;
+	}
+	.like-text {
+		margin: 50px 0;
+	}
+	.text-bottom-template {
+		margin: 10px 20px;
+	}
+
+	.followus-left {
+		font-size: 2rem;
+		margin: 20px 0;
+		margin-left: 10px;
+	}
+
+	.followus-right {
+		font-size: 2rem;
+		margin-left: 10px;
+	}
+
+	.follow-us .container {
+		margin-top: -40px;
+	}
+
+	.btn-follow {
+		margin-right: 20px;
+	}
+
+	.end .container {
+		margin: 0 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.clients {
+		&__blocks {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.content {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pluto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+  <nav id="navbar-example" class="navbar navbar-expand-lg navbar-class bg-light navbar-light d-block">
+    <div class="container py-3">
+      <a class="navbar-brand" href="#"><i class="fas fa-circle orange-color"></i>Pluto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link px-lg-3" href="#">Home</a>
+          <a class="nav-link px-lg-3 border-bottom-about" href="#">About</a>
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle px-lg-3" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu my-2" aria-label px-lg-3ledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <a class="nav-link px-lg-3" href="#">Blog</a>
+          <a class="nav-link px-lg-3" href="#">Contact</a>
+          <div class="content">
+            <div class="search">
+              <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
+              <button class="search__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header-bg text-light">
+    <div class="container py-3 ">
+      <div class="row">
+        <div class="col-sm-6 d-flex flex-column justify-content-center">
+          <p class="display-4 aboutus-top">About us</p>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end align-items-center">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Library</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="introduction py-5 bg-light">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div class="introduction introduction__block introduction__block--left mb-4"></div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="introduction introduction__block introduction__block--right">
+              <h4 class="mb-4">Welcome to our company!</h4>
+              <p class="introduction introduction__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos, odit.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor fugit, rerum laborum perspiciatis quae
+                beatae architecto, voluptatum repellat possimus, culpa repudiandae. Sint, quo dolor fuga ducimus
+                repellat voluptate molestiae vitae repudiandae voluptates, minus distinctio veritatis esse debitis
+                similique architecto?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services py-5 services__section services__section--bgcolor">
+      <h4 class="text-center text-uppercase section-top-text">Our services</h4>
+      <h2 class="text-center">What can we do for you?</h2>
+      <div class="container">
+        <p class="text-center py-4 grey-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+          voluptas explicabo illum expedita! Vitae omnis possimus dolorum, distinctio vel debitis!</p>
+        <div class="row row-cols-md-2 row-cols-lg-3">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title services services__section services__section--h3">Brand creation</h3>
+                    <p class="services services__section serivces__section--card-text grey-color">Lorem, ipsum dolor sit
+                      amet consectetur adipisicing elit. Odio, error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title service-h3">Interface design</h3>
+                    <p class="card-text grey-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                      error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title service-h3">Graphic design</h3>
+                    <p class="card-text grey-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                      error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title service-h3">Web development</h3>
+                    <p class="card-text grey-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                      error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title service-h3">Online marketing</h3>
+                    <p class="card-text grey-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                      error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-4 mb-3">
+              <div class="row g-0">
+                <div class="col-2 d-flex justify-content-center align-items-start py-4">
+                  <i class="fa fa-circle orange-color"></i>
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h3 class="card-title service-h3">Information visualizatior</h3>
+                    <p class="card-text grey-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                      error?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities bg-light capabilities__section--bgcolor py-5">
+
+      <h4 class="text-center text-uppercase section-top-text">our capabilities</h4>
+      <h2 class="text-center">Things we are good at</h2>
+      <div class="container d-flex flex-row align-items-start justify-content-end">
+
+        <div class="col-sm-12 col-lg-6 py-5">
+          <div class="container">
+            <div class="accordion d-flex flex-column justify-content-start">
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item1">
+                  Problems solving
+                </a>
+                <div class="accordion__item__content" id="item1">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel
+                    quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item2">
+                  System monitoring
+                </a>
+                <div class="accordion__item__content" id="item2">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel
+                    quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="accordion__item__title" href="#item3">
+                  Affect management
+                </a>
+                <div class="accordion__item__content" id="item3">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio soluta unde blanditiis vel
+                    quae repellendus sint, non natus deleniti molestias?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-start py-5 progress-side">
+
+          <div class="text-uppercase mt-2 capabilities__striped capabilities__striped--box py-2">
+            <p class="col-sm-6 striped-left">photoshop</p>
+            <p class="col-sm-6 striped-right">Pro</p>
+          </div>
+          <div class="capabilities__progress">
+            <div class="capabilities__progress capabilities__progress--bar" role="progressbar" style="width: 80%"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="text-uppercase mt-2 capabilities__striped capabilities__striped--box py-2">
+            <p class="col-sm-6 striped-left">illustrator</p>
+            <p class="col-sm-6 striped-right">Very good</p>
+          </div>
+          <div class="capabilities__progress">
+            <div class="capabilities__progress capabilities__progress--bar" role="progressbar" style="width: 75%"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="text-uppercase mt-2 capabilities__striped capabilities__striped--box py-2">
+            <p class="col-sm-6 striped-left">indesign</p>
+            <p class="col-sm-6 striped-right">Good</p>
+          </div>
+          <div class="capabilities__progress">
+            <div class="capabilities__progress capabilities__progress--bar" role="progressbar" style="width: 50%"
+              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="text-uppercase mt-2 capabilities__striped capabilities__striped--box py-2">
+            <p class="col-sm-6 striped-left">after effects</p>
+            <p class="col-sm-6 striped-right">Average</p>
+          </div>
+          <div class="capabilities__progress">
+            <div class="capabilities__progress capabilities__progress--bar" role="progressbar" style="width: 25%"
+              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="typography p-5 text-light">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators m-2">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="typography-text p-3 text-center">Typography at its best is visual form of language
+              <br> linking timeless and time
+            </p>
+            <p class="py-5 text-center carousel-title">Robert bringhurst</p>
+          </div>
+
+          <div class="carousel-item">
+            <p class="typography-text p-3 text-center">Typography at its best is visual form of language
+              <br> linking timeless and time
+            </p>
+            <p class="py-5 text-center carousel-title">Robert bringhurst</p>
+          </div>
+
+          <div class="carousel-item">
+            <p class="typography-text p-3 text-center">Typography at its best is visual form of language
+              <br> linking timeless and time
+            </p>
+            <p class="py-5 text-center carousel-title">Robert bringhurst</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="team p-5">
+      <h4 class="section-top-text">our team</h4>
+      <div class="container">
+        <h2 class="text-center">The right people</h2>
+        <div class="row team__section team__section--our-team py-5">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="team__section team__section--img"></div>
+            <p class="my-3">Robert Judd</p>
+            <p class="team__section team__section--positions">CEO</p>
+            <hr class="team__section team__section--line">
+            <div class="team__section team__section--icons">
+              <i class="fa-brands fa-square-facebook m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-twitter m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-invision m-1 team__section team__section--person-icons"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="team__section team__section--img"></div>
+            <p class="my-3">Eva Barnes</p>
+            <p class="team__section team__section--positions">DESIGNER</p>
+            <hr class="team__section team__section--line">
+            <div class="team__section team__section--icons">
+              <i class="fa-brands fa-square-facebook m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-twitter m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-invision m-1 team__section team__section--person-icons"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="team__section team__section--img"></div>
+            <p class="my-3">Eugene Fletcher</p>
+            <p class="team__section team__section--positions">DEVELOPER</p>
+            <hr class="team__section team__section--line">
+            <div class="team__section team__section--icons">
+              <i class="fa-brands fa-square-facebook m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-twitter m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-invision m-1 team__section team__section--person-icons"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="team__section team__section--img"></div>
+            <p class="my-3">Janet McKenzie</p>
+            <p class="team__section team__section--positions">SUPPORT</p>
+            <hr class="team__section team__section--line">
+            <div class="team__section team__section--icons">
+              <i class="fa-brands fa-square-facebook m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-twitter m-1 team__section team__section--person-icons"></i>
+              <i class="fa-brands fa-invision m-1 team__section team__section--person-icons"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="clients py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+
+            <p class="clients__section clients__section--top mb-3">our clients</p>
+
+            <p class="meet-text">Meet our happy
+              <br>customers
+            </p>
+
+            <p class="clients__section clients__section--top-paragraph">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tempora incidunt unde deleniti iure inventore officia numquam harum voluptas fugit
+              praesentium?</p>
+
+          </div>
+
+          <div class="col-sm-8 clients__blocks">
+            <div class="col-sm-2 col-md-2 col-lg-2 me-auto">
+              <div class="clients__section clients__section--img mb-4"></div>
+
+              <div class="clients__section clients__section--img"></div>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-2 me-auto">
+              <div class="clients__section clients__section--img mb-4"></div>
+
+              <div class="clients__section clients__section--img"></div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-2 me-auto">
+              <div class="clients__section clients__section--img mb-4"></div>
+
+              <div class="clients__section clients__section--img"></div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-2 me-auto">
+              <div class="clients__section clients__section--img mb-4"></div>
+
+              <div class="clients__section clients__section--img"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-template p-5">
+      <div class="container">
+        <div class="row py-5 col-12">
+          <div class="col-sm-8 ms-auto grey-color">
+            <h3 class="text-center like-text d-flex flex-column align-items-center justify-content-center">Like what you
+              see? Buy this template</h3>
+          </div>
+          <div class="col-sm-2 take-money">
+            <p>TAKE MY MONEY</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="follow pt-4">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-sm-12 col-lg-6 follow__section follow__section--left">
+            <div class="follow__section follow__section--paragraph">
+              <p>follow us</p>
+            </div>
+            <div class="follow__section follow__section--icon text-light">
+              <a href="https://facebook.com"><i class="fa-brands fa-facebook ms-4"></i></a>
+            </div>
+            <div class="follow__section follow__section--icon text-light">
+              <a href="https://twitter.com"><i class="fa-brands fa-twitter ms-4"></i></a>
+            </div>
+            <div class="follow__section follow__section--icon text-light">
+              <a href="https://google.com"><i class="fa-brands fa-google ms-4"></i></a>
+            </div>
+            <div class="follow__section follow__section--icon text-light">
+              <a href="https://pinterest.com"><i class="fa-brands fa-pinterest ms-4"></i></a>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 follow__section follow__section--right">
+            <div class="follow__section follow__section--paragraph">
+              <p>get the newsletter</p>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <div class="input-group mx-3 mb-5">
+                <input type="text" class="form-control" placeholder="  Your e-mail address">
+
+                <div class="sm-4 col-lg-2 px-1 ms-auto">
+                  <button class="btn follow__section follow__section--btn-follow ms-4" role="button">Subscribe!</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 footer__section footer__section--first-row">
+            <a class="footer__section footer__section--logo" href="#"><i class="fas fa-circle"></i>Pluto</a>
+            <p class="py-3">Made with love by kripalser
+              <br>
+              &copy2013
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-md-3 footer__section footer__section--second-row">
+            <div class="text-uppercase footer__section footer__section--contact-footer">
+              <p><a href="">Contact us</a></p>
+            </div>
+            <a href="mailto: hello@example.com">hello@example.com</a>
+            <p>121 King Street Melbourne
+              <br>
+              Victoria 3000 Australia
+              <br>
+              Phone: +6 3 8376 6284
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-md-3 footer__section footer__section--third-row">
+            <p class="text-uppercase footer__section footer__section--contact">Recent tweet</p>
+            <p class="text-uppercase footer__section footer__section--paragraph-third-footer">December 3</p>
+            <p class="footer__section footer__section--text-third-footer">Testing 1,2,3. We've Just launched
+              <br>
+              version 1 of our new Envavo
+              <br>
+              Marketplaces Hub! Let us know what you
+              <br>
+              think :) <a href="http://envatomarketplaces.com"
+                class="footer__section footer__section--link-footer">http://envatomarketplaces.com</a>
+            </p>
+
+          </div>
+
+          <div class="col-sm-12 col-md-3 footer__section footer__section--fourth-row">
+            <div class="text-uppercase footer__section--four-paragraph">
+              <p>photostream</p>
+            </div>
+            <div class="footer__section footer__section--footer-boxs">
+              <div class="card" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                </div>
+              </div>
+
+              <div class="card" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                </div>
+              </div>
+
+              <div class="card" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <script src="https://kit.fontawesome.com/52989f7b96.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
