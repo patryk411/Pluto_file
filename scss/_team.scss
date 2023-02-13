@@ -1,41 +1,40 @@
 .team {
+	&__section {
+		&--img {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			max-width: 275px;
+			min-width: 275px;
+			height: 270px;
+			background-color: $grey;
+		}
 
-    &__section {
-      
-    &--img {
-      width: 275px;
-      height: 270px;
-      background-color: $grey;
-    
-    }
-    
-    &--positions {
-      color: $grey;
-      font-size: 1rem;
-    }
-    
-    &--our-team {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    &--line {
-      width: 65%;
-    }
-    
-    &--icons {
-      color: $grey;
-    }
-    
-    &--person-icons {
-      transition: .5s;
-  
-  
-      &:hover {
-        color: #212529;
-        cursor: pointer;
-      }
-    }
-    }
-    
-  }
+		&--positions {
+			color: $grey;
+			font-size: 1rem;
+		}
+
+		&--our-team {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&--line {
+			width: 65%;
+		}
+
+		&--icons {
+			color: $grey;
+		}
+
+		&--person-icons {
+			transition: 0.5s;
+
+			&:hover {
+				color: #212529;
+				cursor: pointer;
+			}
+		}
+	}
+}

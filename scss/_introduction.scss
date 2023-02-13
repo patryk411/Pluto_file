@@ -1,15 +1,14 @@
 .introduction {
+	color: $grey;
 
-    &__block {
-
-      &--left  {
-      width: 100%;
-      height: 325px;
-      background-color: #b1abb6;
-    }
-  }
-    &__text {
-      font-size: 1.4rem;
-      color: $grey;
-    }
-  }
+	&__block {
+		&--left {
+			width: 100%;
+			height: 325px;
+			background-color: #b1abb6;
+		}
+		&--text {
+			font-size: 23.2px;
+		}
+	}
+}

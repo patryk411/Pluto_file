@@ -1,24 +1,29 @@
 .clients {
+	position: relative;
+	background-color: $section-color;
 
-    background-color: $section-color;
+	&__section {
+		font-family: $relway;
 
-    &__section {
+		&--top {
+			text-transform: uppercase;
+			color: $grey;
+			font-size: 0.8rem;
+		}
 
-      &--top {
-        text-transform: uppercase;
-        color: $grey;
-        font-size: 0.8rem;
-      }
-    
-      &--top-paragraph {
-        color: $grey;
-        font-size: 1rem;
-      }
-    
-      &--img {
-        background-color: $grey;
-        width: 100%;
-        height: 40%;
-    }
-  }
+		&--top-paragraph {
+			color: $grey;
+			font-size: 1rem;
+		}
+
+		&--img {
+			background-color: $grey;
+			width: 100%;
+			height: 40%;
+		}
+	}
+
+	&__blocks {
+		display: flex;
+	}
 }

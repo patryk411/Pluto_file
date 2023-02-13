@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,6 +24,8 @@ body {
 
 h2 {
   font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 .orange-color {
@@ -160,16 +164,21 @@ h2 {
   color: #696969;
 }
 
+.introduction {
+  color: #696969;
+}
 .introduction__block--left {
   width: 100%;
   height: 325px;
   background-color: #b1abb6;
 }
-.introduction__text {
-  font-size: 1.4rem;
-  color: #696969;
+.introduction__block--text {
+  font-size: 23.2px;
 }
 
+.services {
+  font-family: "Raleway", sans-serif;
+}
 .services__section--bgcolor {
   background-color: #f5f5f5;
 }
@@ -267,7 +276,11 @@ h2 {
 }
 
 .team__section--img {
-  width: 275px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 275px;
+  min-width: 275px;
   height: 270px;
   background-color: #696969;
 }
@@ -294,7 +307,11 @@ h2 {
 }
 
 .clients {
+  position: relative;
   background-color: #f5f5f5;
+}
+.clients__section {
+  font-family: "Raleway", sans-serif;
 }
 .clients__section--top {
   text-transform: uppercase;
@@ -309,6 +326,9 @@ h2 {
   background-color: #696969;
   width: 100%;
   height: 40%;
+}
+.clients__blocks {
+  display: flex;
 }
 
 .follow {
@@ -329,6 +349,7 @@ h2 {
   flex-direction: row;
   justify-content: start;
   align-items: start;
+  color: #fff;
 }
 .follow .form-control {
   display: flex;
@@ -452,6 +473,11 @@ h2 {
   text-transform: uppercase;
   font-size: 0.8rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.buy-template {
+  font-family: "Raleway", sans-serif;
 }
 
 .container .text-bottom-template {
@@ -521,6 +547,11 @@ h2 {
   }
   .end .container {
     margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .clients__blocks {
+    display: none;
   }
 }
 @media (max-width: 992px) {
